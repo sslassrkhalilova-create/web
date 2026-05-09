@@ -22,6 +22,18 @@
             padding:40px;
             box-shadow:0 5px 15px rgba(0,0,0,0.1);
         }
+
+        .nav-link{
+
+            font-size:18px;
+
+        }
+        
+        .nav-link:hover{
+            
+            color:green !important;
+        
+        }
         
     </style>
 
@@ -30,32 +42,75 @@
 <body>
 
     <!-- Navbar -->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
+        
         <div class="container">
-
+            
             <a class="navbar-brand" href="index.html">
-                Salasar
+            
+                Salasar Khalilova'nın Web Sitesi
+          
             </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 
-            <div>
+             <span class="navbar-toggler-icon"></span>
+            
+            </button>
 
-                <a class="text-white me-3 text-decoration-none" href="index.html">
-                    Ana Sayfa
-                </a>
+            <div class="collapse navbar-collapse" id="menu">
+                
+                <ul class="navbar-nav ms-auto gap-4">
+                    
+                    <li class="nav-item">
+                    
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    
+                    </li>
 
-                <a class="text-white me-3 text-decoration-none" href="about.html">
-                    Hakkımda
-                </a>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link" href="about.html">Hakkımda</a>
+                    
+                    </li>
+                    
+                    <li class="nav-item">
+                    
+                        <a class="nav-link" href="cv.html">CV</a>
+                    
+                    </li>
+                    
+                    <li class="nav-item">
+                    
+                        <a class="nav-link" href="city.html">Şehrim</a>
+                    
+                    </li>
+                    
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    
+                    </li>
+                    
+                    <li class="nav-item">
 
-                <a class="text-white text-decoration-none" href="cv.html">
-                    CV
-                </a>
+                        <a class="nav-link" href="login.html">Login</a>
+                    
+                    </li>
+                    
+                    <li class="nav-item">
+                    
+                        <a class="nav-link" href="api.html">API</a>
+                    
+                    </li>
+                
+                </ul>
 
             </div>
 
         </div>
-
+        
     </nav>
 
     <!-- About Section -->
