@@ -35,6 +35,15 @@
         
         }
         
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon{
+
+            background-color:black;
+            border-radius:50%;
+
+}
+
+
     </style>
 
 </head>
@@ -122,10 +131,66 @@
             <h1 class="text-center mb-4">
                 Hakkımda
             </h1>
+            
+            <div id="aboutSlider" class="carousel slidecarousel-fade" data-bs-ride="carousel">
+                
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                        
+                        <img src="images/about1.jpg"
+                        class="d-block mx-auto"
+                        width="400"
+                        height="500">
+
+                    </div>
+                    
+                    <div class="carousel-item">
+
+                        <img src="images/about2.jpg"
+                        class="d-block mx-auto"
+                        width="400"
+                        height="500">
+
+                    </div>
+                    
+                    <div class="carousel-item">
+
+                        <img src="images/about3.jpg"
+                        class="d-block mx-auto"
+                        width="400"
+                        height="500">
+
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev"
+                   type="button"
+                   data-bs-target="#aboutSlider" 
+                   data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+                
+                </button>
+
+                <button class="carousel-control-next"
+                   type="button"
+                   data-bs-target="#aboutSlider"
+                   data-bs-slide="next">
+
+                  <span class="carousel-control-next-icon"></span>
+                
+                </button>
+
+            </div>
 
             <p>
-                Merhaba, benim adım Salasar.
+
                 Rusya'nın Tomsk şehrinden geliyorum.
+            </p>
+
+            <p>
+                Adım Salasar.
             </p>
 
             <p>
@@ -137,16 +202,47 @@
             </p>
 
             <p>
-                Hobilerim - seyhat etmek, yeni yerler keşfetmek, manikür yapmak, kitap okumak ve Kafkas danslarıdır.
+                Seyahat etmek, yeni kültürler keşfetmek, kitap okumak, spor yapmak, manikür yapmak ve Kafkas dansları en sevdiğim hobiler arasındadır.
             </p>
 
             <p>
-                Web tasarımı ve estetik arayüzler ilgimi çekiyor.
+                Yeni şeyler öğrenmeyi, farklı alanlarda kendimi geliştirmeyi, etkinliklere katılmayı seviyorum.
             </p>
 
+            <p>
+              Figma programı ile tasarımlar yapmak, web siteleri için arayüz oluşturmak ve yaratıcı projeler hazırlamak ilgimi çekiyor.
+            </p>
+
+            <p>
+              Kendimi daha profesyonel, yaratıcı ve gelişmiş bir seviyeye taşımak istediğim için bu alanı seçtim.
+            </p>
+            
+            <div class="text-center mt-4">
+                
+                <iframe width="430"
+                  height="315"
+                  src="https://www.youtube.com/embed/BeLjLroax5s"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allowfullscreen>
+                </iframe>
+
+                <div class="text-center mt-3">
+                    <a href="https://github.com/sslassrkhalilova-create/web"
+                      class="btn btn-dark"
+                      target="_blank">
+
+                      GitHub
+
+                    </a>
+
+                </div>
+            </div>
         </div>
 
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
