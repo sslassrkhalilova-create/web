@@ -7,23 +7,12 @@
     <title>İletişim</title>
 
     <!-- Bootstrap -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>  
-
-        .nav-link{
-
-            font-size:18px;
-
-        }
-        
-        .nav-link:hover{
-            
-            color:green !important;
-        
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -111,7 +100,7 @@
                 İletişim Formu
             </h1>
 
-            <form onsubmit="return validateForm()">
+            <form onsubmit="return validateForm()" id="app">
 
                 <div class="mb-3">
 
@@ -122,6 +111,16 @@
                     <input type="text" class="form-control" id="name">
 
                 </div>
+                
+                <div class="mb-3">
+                    
+                    <label class="form-label">
+                        Telefon
+                    </label>
+                    
+                    <input type="text" class="form-control" id="phone">
+                
+                </div>
 
                 <div class="mb-3">
 
@@ -129,7 +128,44 @@
                         Email
                     </label>
 
-                    <input type="email" class="form-control" >
+                    <input type="email" class="form-control" id="email">
+
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label d-block">
+                        Cinsiyet
+                    </label>
+                    
+                    <input type="radio" name="gender"> Kadın
+                    
+                    <input type="radio" name="gender" class="ms-3"> Erkek
+                
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label d-block">
+                        İlgi Alanları
+                    </label>
+                    
+                    <input type="checkbox"> Tasarım
+
+                    <input type="checkbox" class="ms-3"> Spor
+                
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">
+                        Şehir Seçiniz
+                    </label>
+                    
+                    <select class="form-select">
+                        <option>İstanbul</option>
+                        <option>Ankara</option>
+                        <option>Sakarya</option>
+                        <option>Bursa</option>
+                        <option>izmir</option>
+                    </select>
 
                 </div>
 
@@ -143,9 +179,21 @@
 
                 </div>
 
-                <button class="btn btn-dark">
+                <div class="d-flex gap-3 mt-3">
+
+                <button class="btn btn-dark px-4">
                     Gönder
                 </button>
+
+                <button type="button"
+                class="btn btn-success px-4"
+                @click="vueControl">
+
+                  Vue Kontrol
+
+                </button>
+
+                </div>
 
             </form>
 
@@ -155,6 +203,28 @@
 
 <script src="validation.js"> </script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
+<script>
+
+    new Vue({
+    
+      el:"#app",
+
+      methods:{
+    
+            vueControl(){
+    
+              alert("Vue.js kontrol başarılı!"); 
+
+            } 
+            
+        }
+
+    })
+
+</script>
 
 </html>

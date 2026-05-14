@@ -25,31 +25,33 @@ $correctPassword = "b251210593";
 
 <body>
 
-<div class="container mt-5">
+    <div class="container mt-5">
 
-    <div class="card p-5 shadow text-center">
+        <div class="card p-5 shadow text-center">
 
 <?php
 
 if($email == $correctEmail && $password == $correctPassword){
 
-    echo "<h1>Hoşgeldiniz</h1>";
+    echo "<h1>Hoşgeldiniz B251210593</h1>";
 
     echo "<p>Giriş başarılı.</p>";
 
 }
+
 else{
+    
+    header("Refresh:2; url=login.html");
 
     echo "<h1>Hatalı giriş yaptınız!</h1>";
 
-    echo "<p>Email veya şifre yanlış.</p>";
+    echo "<p>Login sayfasına yönlendiriliyorsunuz.</p>";
 
 }
 
 ?>
 
-    </div>
-
+</div>
 </div>
 
 </body>
