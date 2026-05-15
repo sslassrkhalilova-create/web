@@ -37,6 +37,8 @@ if($email == $correctEmail && $password == $correctPassword){
 
     echo "<p>Giriş başarılı.</p>";
 
+    echo "<a href='index.html' class='btn btn-dark mt-3'>Ana Sayfaya Dön</a>";
+
 }
 
 else{
@@ -47,6 +49,7 @@ else{
 
     echo "<p>Login sayfasına yönlendiriliyorsunuz.</p>";
 
+    echo "<a href='login.html' class='btn btn-danger mt-3'>Tekrar Dene</a>";
 }
 
 ?>

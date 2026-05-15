@@ -20,8 +20,31 @@ padding:40px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
+.card{
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 body{
-background-color: darkolivegreen;
-font-family:Arial, Helvetica, sans-serif;
+    background-color: darkolivegreen;
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
+footer{
+    margin-top: auto;
 }
 
