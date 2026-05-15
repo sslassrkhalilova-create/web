@@ -3,31 +3,35 @@ function validateForm(event) {
     event.preventDefault();
 
     let name = document.getElementById("name").value.trim();
-
+ 
     let phone = document.getElementById("phone").value.trim();
-
+ 
     let email = document.getElementById("email").value.trim();
-
+ 
     let message = document.getElementById("message").value.trim();
 
-    if(name === "" || phone === "" || email === "" || message === ""){
+    if (name === "" || phone === "" || email === "" || message === "") {
 
         alert("Lütfen tüm alanları doldurun!");
-
+  
         return false;
     }
 
-    if(!email.includes("@")){
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+    if (!emailPattern.test(email)) {
+
+       
         alert("Geçerli bir email adresi giriniz!");
-
+       
         return false;
     }
 
-    if(phone.length < 10){
+    let phonePattern = /^[0-9]{10,11}$/;
 
-        alert("Telefon numarası eksik!");
+    if (!phonePattern.test(phone)) {
 
+        alert("Telefon numarası geçersiz!");
         return false;
     }
 
